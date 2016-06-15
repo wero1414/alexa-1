@@ -43,6 +43,9 @@ HelloWorld.prototype.intentHandlers = {
     "HelloWorldIntent": function (intent, session, response) {
         response.tellWithCard("Hello World!", "Greeter", "Hello World!");
     },
+      "Love": function(intent, session, response){
+        response.ask("Goodbye", "Goodbye");
+    },
     "AMAZON.HelpIntent": function (intent, session, response) {
         response.ask("You can say hello to me!", "You can say hello to me!");
     }
